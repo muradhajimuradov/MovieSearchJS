@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body  onload="ShowFavItems()">
+    <div class="menu">
+        <a href="index.html">Search</a>
+        <a href="favorites.html">Favorites</a>
+    </div>
+    <div class="fav-items">
+        <div class="fav-items-inner">
+
+        </div>
+    </div>
+    <script id="MovieFavCard" type="text/template">
+        <div class="poster-container">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-inner">
+                <h2 class="title"></h2>
+                <h3 class="year"></h3>
+                <h3 class="genre"></h3>
+                <h3 class="actors"></h3>
+                <p class="plot"></p>
+            </div>
+            <div class="right-buttons">
+                <button type="button" onclick="Remove()">Remove</button>
+            </div>
+        </div>
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
